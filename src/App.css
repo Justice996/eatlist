@@ -1,4 +1,7 @@
 .App {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -6,12 +9,11 @@
   height: 40vmin;
   pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul,li{
+  list-style: none;
 }
+
+
 
 .App-header {
   background-color: #282c34;
@@ -28,11 +30,38 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.changeNumberBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .left,.right{
+    color: #fff;
+    background-color: #2563eb;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .center{
+    margin: 0 20px;
   }
+}
+
+.toCenter{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.btn{
+  width: 100px;
+  height: 36px;
+  line-height: 36px;
+  background-color: #2563eb;
+  color: white;
 }
